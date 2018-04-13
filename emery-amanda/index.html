@@ -17,7 +17,18 @@
         - Move your old template structure to here. Remember that this template needs to have the same structure as the old one!
         - Insert placeholder keys.
         - If your object doesn't have values you need yet, you can add those properties in the model.
+        - Replace only articles templates or dynamic html that is being setup by js such as append 
     -->
+
+    <script id="article-template" type="text/x-handlebars-template">
+      {{{author}}}
+      {{{authorUrl}}}
+      {{{title}}}
+      {{{category}}}
+      {{{body}}}
+      {{publishedOn}}      
+    </script>
+
   </head>
   <body>
     <header class="site-header clearfix">
