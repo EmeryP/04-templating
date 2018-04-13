@@ -23,9 +23,9 @@
     <script id="article-template" type="text/x-handlebars-template">
       
       
-      <!-- {{{category}}} -->
-      <!--   -->
-      <!-- <section id="articles" class="tab-content">
+      
+       
+      <section id="article" class="tab-content">
         <div>
           <ul id="filters">
             <li>
@@ -35,11 +35,11 @@
             </li>
             <li>
               <select id="category-filter">
-                <option value="">-- Filter by Categories --</option>
+                <option value=" {{& category}} ">-- Filter by Categories --</option>
               </select>
             </li>
           </ul>
-        </div> -->
+        </div>
 
       <article class="template" data-category="cat">
         <header>
