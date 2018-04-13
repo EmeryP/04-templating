@@ -21,12 +21,43 @@
     -->
 
     <script id="article-template" type="text/x-handlebars-template">
-      {{{author}}}
-      {{{authorUrl}}}
-      {{{title}}}
-      {{{category}}}
-      {{{body}}}
-      {{publishedOn}}      
+      
+      
+      <!-- {{{category}}} -->
+      <!--   -->
+      <!-- <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="author-filter">
+                <option value="">-- Filter by Authors --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
+          </ul>
+        </div> -->
+
+      <article class="template" data-category="cat">
+        <header>
+          <h1>{{title}}</h1>
+          <div class="byline">
+            By
+            <address>
+              <a href=" {{& authorUrl}} ">{{{author}}}</a>
+            </address>
+            published
+            <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
+          </div>
+        </header>
+        <section class="article-body">{{{body}}}</section>
+        <a href="#" class="read-on">Read on &rarr;</a>
+      </article>
+    </section>
+           
     </script>
 
   </head>
